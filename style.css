@@ -1,0 +1,125 @@
+/* Import font */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f7f1;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header {
+    background-color: #d8a87f;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+  
+  nav {
+    background-color: #6a9f58;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin: 0;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #222;
+  }
+  
+  .hero {
+    text-align: center;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+  
+  .hero img {
+    max-width: 95%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  
+  .about {
+    background-color: #fff;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    color: #5c4033;
+    margin-bottom: 20px;
+  }
+  
+  /* Footer Styles */
+  .custom-footer {
+    background-color: #d8a87f;
+    color: white;
+    padding: 20px 10px; /* Reduced */
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 40px; /* Will be overridden in media */
+  }
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 15px;
+  }
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 6px; /* compact layout */
+    }
+  
+    .footer-column {
+      margin-bottom: 0;
+      padding: 2px 0;
+    }
+  }
+  

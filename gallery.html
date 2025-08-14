@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pragati Madhyamik Vidyalaya</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<style>
+  .gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 30px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #fff;
+  border: 2px solid #b6a1a1; /* slightly thicker & softer border */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+  cursor: pointer;
+}
+
+.gallery-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(25, 3, 3, 0.15), rgba(0,0,0,0.05));
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  opacity: 0.6;
+  border-radius: 20px;
+}
+
+.gallery-item:hover::before {
+  opacity: 0;
+}
+
+.gallery-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(16, 16, 16, 0.15);
+  border-color: #564848; /* darker border on hover */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.12) rotate(1deg);
+}
+
+</style>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>प्रगती माध्यमिक विद्यालय , मालदोली</h1>
+      
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="admission.html">Admission</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+ <main>
+    
+    <div class="gallery-container">
+       <div class="gallery-item">
+        <img src="s9.jpeg" alt="School Event 1" />
+      </div>
+      <div class="gallery-item">
+        <img src="s1.jpeg" alt="School Event 1" />
+      </div>
+    
+     
+     
+      <div class="gallery-item">
+        <img src="s3.jpeg" alt="School Building" />
+      </div>
+<div class="gallery-item">
+        <img src="s10.jpeg" alt="School Event 2" />
+      </div>
+      <div class="gallery-item">
+        <img src="s4.jpeg" alt="School Building" />
+      </div>
+     <div class="gallery-item">
+        <img src="s5.jpeg" alt="School Event 1" />
+      </div>
+      <div class="gallery-item">
+        <img src="s6.jpeg" alt="School Event 2" />
+      </div>
+    
+      <div class="gallery-item">
+        <img src="s8.jpeg" alt="School Building" />
+      </div>
+      <div class="gallery-item">
+        <img src="s11.jpeg" alt="School Event 3" />
+      </div>
+      <div class="gallery-item">
+        <img src="s2.jpeg" alt="School Event 2" />
+      </div>
+      
+      
+      <div class="gallery-item">
+        <img src="s12.jpeg" alt="School Building" />
+      </div>
+       <div class="gallery-item">
+        <img src="s7.jpeg" alt="School Building" />
+      </div>
+      <!-- Add more images here -->
+    </div>
+  </main>
+
+  <footer class="custom-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h2>प्रगती माध्यमिक विद्यालय</h2>
+        <p>Empowering education in rural India.<br>
+          Address: Maldoli Chiplun, Maharashtra
+        </p>
+      </div>
+  
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <p>
+          Phone: +91 9403460685<br>
+          Email: pmvmmaldoli@gmail.com
+        </p>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      &copy; 2025 Pragati Madhyamik Vidyalaya | All Rights Reserved
+    </div>
+  </footer>
+</body>
+</html>
